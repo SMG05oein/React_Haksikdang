@@ -24,9 +24,9 @@ function App() {
   return (
     <Routes>
         <Route path={"/"} element={<TopMenu/>}>
-            {/*<Route index element={<Test hello={hello}/>}/>*/}
             <Route index element={<HomePage/>}/>
          </Route>
+        <Route path={"/devtest"} element={<Test hello={hello}/>}/>
         <Route path={"*"} element={<NotFound/>}/>
     </Routes>
   );
