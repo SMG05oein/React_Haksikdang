@@ -23,7 +23,6 @@ const TopMenu = () => {
                             <Nav.Link href="/">교수회관</Nav.Link>
                             <Nav.Link href="/">밀겨울</Nav.Link>
                             <Nav.Link href="/">안골</Nav.Link>
-                            <div>로그인</div>
                             <IoPersonCircleOutline onClick={()=>{window.location.href = '/myPage'}} className={'person-icon'}  />
                         </Nav>
                     </Navbar.Collapse>
