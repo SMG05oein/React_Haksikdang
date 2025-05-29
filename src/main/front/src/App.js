@@ -5,6 +5,9 @@ import axios from "axios";
 import {Route, Routes} from "react-router-dom";
 import Test from "./TestComponent/Test";
 import NotFound from "./component/NotFound";
+import TopMenu from "./Topmenu/TopMenu";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HomePage from "./component/HomePage/HomePage";
 
 function App() {
 
@@ -13,13 +16,17 @@ function App() {
   useEffect(() => {
     axios.get('/api/test')
         .then((res) => {
+            console.log(res);
           setHello(res.data);
         })
   }, []);
 
   return (
     <Routes>
-        <Route path={"/"} element={<Test hello={hello}/>}/>
+        <Route path={"/"} element={<TopMenu/>}>
+            {/*<Route index element={<Test hello={hello}/>}/>*/}
+            <Route index element={<HomePage/>}/>
+         </Route>
         <Route path={"*"} element={<NotFound/>}/>
     </Routes>
   );

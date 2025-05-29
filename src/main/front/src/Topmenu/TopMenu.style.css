@@ -1,0 +1,18 @@
+.person-icon{
+    position: absolute;
+    width:44px;
+    height:44px;
+    right: 1%;
+}
+.person-icon:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+    .person-icon{
+        position: unset;
+        right: unset;
+        width:44px;
+        height:44px;
+    }
+}
