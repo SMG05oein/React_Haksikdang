@@ -13,13 +13,13 @@ function App() {
 
   const [hello, setHello] = useState('');
 
-  useEffect(() => {
-    axios.get('/api/test')
-        .then((res) => {
-            console.log(res);
-          setHello(res.data);
-        })
-  }, []);
+  // useEffect(() => {
+  //   axios.get('/api/test')
+  //       .then((res) => {
+  //           console.log(res);
+  //         setHello(res.data);
+  //       })
+  // }, []);
 
   return (
     <Routes>
