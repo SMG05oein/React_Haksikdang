@@ -1,18 +1,21 @@
 .person-icon{
-    position: absolute;
-    width:44px;
-    height:44px;
-    right: 1%;
+    height: 30px;
+    width: auto;
 }
 .person-icon:hover{
     cursor: pointer;
 }
 
+.dropdown-person-icon{
+    margin-left: auto;
+}
+
 @media screen and (max-width: 991px) {
     .person-icon{
-        position: unset;
-        right: unset;
-        width:44px;
-        height:44px;
+        height: 30px;
+        width: auto;
+    }
+    .dropdown-person-icon{
+        margin-left: unset;
     }
 }
