@@ -1,10 +1,10 @@
 {
   "user": [
     {
-      "idx": 1, "id": "student","name": "test", "passwd": "test"
+      "idx": 1, "id": "student","number": "20202020", "passwd": "test"
     },
     {
-      "idx": 2, "id": "admin", "name": "admin", "passwd": "admin"
+      "idx": 2, "id": "admin", "name": "6666", "passwd": "admin"
     }
   ],
   "food": [

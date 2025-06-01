@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from "./component/HomePage/HomePage";
 import {useUser} from "./hooks/useUser";
 import {useFood} from "./hooks/useFood";
+import Login from "./component/Login/Login";
 
 function App() {
 
@@ -21,11 +22,12 @@ function App() {
     //     console.log(food);
     // })
     const [hello, setHello] = useState('');
-//
+
     return (
         <Routes>
             <Route path={"/"} element={<TopMenu/>}>
                 <Route index element={<HomePage/>}/>
+                <Route path={"/login"} element={<Login/>}/>
             </Route>
             <Route path={"/devtest"} element={<Test hello={hello}/>}/>
             <Route path={"*"} element={<NotFound/>}/>

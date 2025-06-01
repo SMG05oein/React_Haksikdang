@@ -35,7 +35,7 @@ const TopMenu = () => {
                                 onMouseEnter={() => setShowDropdown(true)}
                                 onMouseLeave={() => setShowDropdown(false)}
                             >
-                                <NavDropdown.Item href="/">로그인</NavDropdown.Item>
+                                <NavDropdown.Item href="/login">로그인</NavDropdown.Item>
                                 <NavDropdown.Item href="/">회원가입</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
