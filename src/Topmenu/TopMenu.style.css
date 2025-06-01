@@ -1,0 +1,27 @@
+.person-icon{
+    height: 30px;
+    width: auto;
+}
+.person-icon:hover{
+    cursor: pointer;
+}
+
+.dropdown-person-icon{
+    margin-left: auto;
+}
+
+.dropdown-person-icon .dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+}
+
+
+@media screen and (max-width: 991px) {
+    .person-icon{
+        height: 30px;
+        width: auto;
+    }
+    .dropdown-person-icon{
+        margin-left: unset;
+    }
+}

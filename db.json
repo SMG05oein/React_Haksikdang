@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "idx": 1, "id": "student","name": "test", "passwd": "test"
+    },
+    {
+      "idx": 2, "id": "admin", "name": "admin", "passwd": "admin"
+    }
+  ],
+  "food": [
+    {
+      "teaching_center_1f": [],
+      "teaching_center_2f": [],
+      "meal_winter": [],
+      "angol": []
+    }
+  ]
+}
