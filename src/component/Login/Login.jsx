@@ -42,7 +42,7 @@ const Login = ({setAuth}) => {
         // console.log(studentId);
         // console.log(check);
         if(check){
-            alert("홈으로");
+            alert("로그인 성공!");
             if(str === "student") {setAuth(1);}
             else if(str === "admin") {setAuth(2)}
             navigate("/");
