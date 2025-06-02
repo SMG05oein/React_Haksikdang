@@ -1,18 +1,20 @@
 import React, {useState} from 'react';
 import "./TopMenu.style.css"
 import {Button, Container, Form, Nav, Navbar, NavDropdown} from "react-bootstrap";
-import {Outlet} from "react-router-dom";
+import {Outlet, useNavigate} from "react-router-dom";
 import BuLogo from "../BuLogo.png"
 import { IoPersonCircleOutline } from "react-icons/io5";
 
-const TopMenu = () => {
+const TopMenu = ({auth, setAuth}) => {
     const [showDropdown, setShowDropdown] = useState(false);
+
+    const navigate = useNavigate();
 
     return (
         <div className="top-menu">
             <Navbar expand="lg" className="bg-primary bg-gradient">
                 <Container fluid>
-                    <Navbar.Brand href="/"><img style={{width:'44px'}} src={BuLogo}/> 백석대 학식당 통합 예매 시스템</Navbar.Brand>
+                    <Navbar.Brand onClick={() => {navigate("/")}} style={{cursor:'pointer'}}><img style={{width:'44px'}} src={BuLogo}/> 백석대 학식당 통합 예매 시스템</Navbar.Brand>
                     {/*<IoPersonCircleOutline style={{ width: "44", height: "44", marginLeft: "auto" }} />*/}
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
@@ -21,11 +23,11 @@ const TopMenu = () => {
                             style={{ maxHeight: '1100px', width: '100%' }}
                             navbarScroll
                         >
-                            <Nav.Link href="/">홈으로</Nav.Link>
-                            <Nav.Link href="/">교수회관</Nav.Link>
-                            <Nav.Link href="/">밀겨울</Nav.Link>
-                            <Nav.Link href="/">안골</Nav.Link>
-                            <Nav.Link href="/devtest">DevTest</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("/")}}>홈으로</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("/")}}>교수회관</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("/")}}>밀겨울</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("/")}}>안골</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("/devtest")}}>DevTest</Nav.Link>
 
                             <NavDropdown
                                 title={<IoPersonCircleOutline className="person-icon"/>}
@@ -35,8 +37,26 @@ const TopMenu = () => {
                                 onMouseEnter={() => setShowDropdown(true)}
                                 onMouseLeave={() => setShowDropdown(false)}
                             >
-                                <NavDropdown.Item href="/login">로그인</NavDropdown.Item>
-                                <NavDropdown.Item href="/">회원가입</NavDropdown.Item>
+                                {auth === 0 ?
+                                    (
+                                        <div>
+                                            <NavDropdown.Item href="/login">로그인</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={()=>alert("기능 구현 중...")}>회원가입</NavDropdown.Item>
+                                        </div>
+                                    ):
+                                    (
+                                        <div>
+                                            <NavDropdown.Item>{auth === 1 ? "학생 계정입니다." : "관리자 계정입니다"}</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={()=>{
+                                                if(window.confirm("로그아웃을 하시겠습니까?")){
+                                                    setAuth(0);
+                                                    alert("로그아웃 되었습니다!!");
+                                                }else{return;}
+                                            }}>로그아웃</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={()=>alert("기능 구현 중...")}>내 설정</NavDropdown.Item>
+                                        </div>
+                                    )
+                                }
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

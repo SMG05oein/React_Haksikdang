@@ -4,17 +4,18 @@ import "./Login.style.css";
 import {useUser} from "../../hooks/useUser";
 import {useNavigate} from "react-router-dom";
 
-const Login = () => {
+const Login = ({setAuth}) => {
     const [studentId, setStudentId] = useState("");
     const [passwd, setPasswd] = useState("");
     const studentIdRef = useRef(null);
     const passwdRef = useRef(null);
     const navigate = useNavigate();
-    const user = useUser()
+    const user = useUser();
+    let str = "";
 
     // console.log(user[0]?.number);
     const handleSubmit = (event) => {
-        event.preventDefault(); // 폼 제출 시 페이지 새로고침 방지
+        event.preventDefault();
         if(studentId === "") {
             alert("학번을 입력해주세요.");
             studentIdRef.current.focus();
@@ -33,16 +34,21 @@ const Login = () => {
                 check = false;
             }else{
                 check = true;
-                // return;
+                str = user[i].id
+                break;
             }
         }
+        // console.log(passwd);
+        // console.log(studentId);
         // console.log(check);
         if(check){
             alert("홈으로");
+            if(str === "student") {setAuth(1);}
+            else if(str === "admin") {setAuth(2)}
+            navigate("/");
         }else{
             alert("학번 또는 비밀번호가 맞지 않습니다!!");
         }
-        navigate("/");
     };
 
     return (
@@ -70,6 +76,10 @@ const Login = () => {
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     확인
+                </Button>
+                <p/>
+                <Button variant="primary" type="button" onClick={()=>navigate('/')}>
+                    홈으로
                 </Button>
             </Form>
         </Container>

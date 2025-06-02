@@ -14,6 +14,7 @@ import Login from "./component/Login/Login";
 
 function App() {
 
+    const [auth, setAuth] = useState(0);
     // const user = useUser();
     // const food = useFood();
     //
@@ -25,9 +26,9 @@ function App() {
 
     return (
         <Routes>
-            <Route path={"/"} element={<TopMenu/>}>
+            <Route path={"/"} element={<TopMenu auth={auth} setAuth={setAuth} />}>
                 <Route index element={<HomePage/>}/>
-                <Route path={"/login"} element={<Login/>}/>
+                <Route path={"/login"} element={<Login setAuth={setAuth} />}/>
             </Route>
             <Route path={"/devtest"} element={<Test hello={hello}/>}/>
             <Route path={"*"} element={<NotFound/>}/>
