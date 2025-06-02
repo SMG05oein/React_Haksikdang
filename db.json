@@ -86,7 +86,7 @@
       "foodName": "비빔밥",
       "price": 6000,
       "category": "기타",
-      "img": "/static/media/bibibab.7270435a4c41f163e90f.png"
+      "img": "/static/media/bibibab.5a8544867382b77eab92.png"
     },
     {
       "idx": 4,
@@ -128,7 +128,7 @@
       "foodName": "시원냉모밀",
       "price": 5900,
       "category": "기타",
-      "img": "/static/media/nangmomil.d6350dcec16d35ac1a54.png"
+      "img": "/static/media/nangmomil.47b6c88a2bb2f12732bf.png"
     }
   ],
   "angol":[]
