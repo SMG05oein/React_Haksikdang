@@ -6,13 +6,9 @@
     max-width: 100%;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .food-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 98%;
-        height: 260px;
+        text-align: center;
+        margin: auto;
     }
 }

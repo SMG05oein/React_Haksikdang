@@ -5,7 +5,7 @@ import aa from "../../photo/MW/nangmomil.png"
 const FoodCard = ({f, a}) => {
     // console.log(f.img);
     // let url = f.img;
-    console.log(aa);
+    // console.log(aa);
     return (
         <div className="food-card">
             <div>
