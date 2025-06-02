@@ -1,6 +1,6 @@
 import React from 'react';
 import "./FoodCard.style.css";
-import aa from "../../photo/cheeseDongase.png"
+import aa from "../../photo/MW/nangmomil.png"
 
 const FoodCard = ({f, a}) => {
     // console.log(f.img);
@@ -15,8 +15,5 @@ const FoodCard = ({f, a}) => {
         </div>
     );
 };
-
-
-// /static/media/dongase1.e68e2658852b43c3c524.png
 
 export default FoodCard;

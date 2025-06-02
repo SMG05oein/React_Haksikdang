@@ -34,35 +34,35 @@
       "foodName": "제육 덮밥",
       "price": 5500,
       "category": "덮밥",
-      "img": ""
+      "img": "/static/media/jBab.43f74e755cffd3d56c69.png"
     },
     {
       "idx": 4,
       "foodName": "보쌈 정식",
       "price": 5500,
       "category": "정식",
-      "img": ""
+      "img": "/static/media/boSam.7e01d7ce0fc82b2dd190.png"
     },
     {
       "idx": 5,
       "foodName": "수육 정식",
       "price": 5500,
       "category": "정식",
-      "img": ""
+      "img": "/static/media/suyuk.797ce924635e3c59cc9e.png"
     },
     {
       "idx": 6,
       "foodName": "알밥",
       "price": 5500,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/albab.b92509a65ae1357ecf5a.png"
     },
     {
       "idx": 7,
       "foodName": "치킨가스",
       "price": 6500,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/chichengas.3a3a4932c209fcaaef81.png"
     }
   ],
   "teaching_center_2f": [],
@@ -72,63 +72,63 @@
       "foodName": "사골칼국수",
       "price": 4500,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/saGolKal.cf2797e5f9fff042e097.png"
     },
     {
       "idx": 2,
       "foodName": "칼칼칼국수",
       "price": 5500,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/kalkalkal.ae08c066e61dd7d8d815.png"
     },
     {
       "idx": 3,
       "foodName": "비빔밥",
       "price": 6000,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/bibibab.7270435a4c41f163e90f.png"
     },
     {
       "idx": 4,
       "foodName": "육개장",
       "price": 7500,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/yukgeajang.3f6c938c1eef274dc7b3.png"
     },
     {
       "idx": 5,
       "foodName": "육개장칼국수",
       "price": 7500,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/yukkal.e8b957ec9e63677d44a1.png"
     },
     {
       "idx": 6,
       "foodName": "명품찐만두",
       "price": 4000,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/mkal.c18902d0192474b30c38.png"
     },
     {
       "idx": 7,
       "foodName": "궁중떡갈비",
       "price": 2500,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/guong.5b529b740e326d0519a3.png"
     },
     {
       "idx": 8,
       "foodName": "일품갈비만두",
       "price": 4500,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/galman.f83d876850d10c5e210a.png"
     },
     {
       "idx": 9,
       "foodName": "시원냉모밀",
       "price": 5900,
       "category": "기타",
-      "img": ""
+      "img": "/static/media/nangmomil.d6350dcec16d35ac1a54.png"
     }
   ],
   "angol":[]

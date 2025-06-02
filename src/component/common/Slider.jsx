@@ -3,7 +3,7 @@ import {responsive} from "../../constants/responsive";
 import Carousel from "react-multi-carousel";
 import FoodCard from "./FoodCard";
 import {useFood} from "../../hooks/useFood";
-import aa from "../../photo/gogumaDongase.png"
+import aa from "../../photo/TC1/gogumaDongase.png"
 
 const Slider = ({where}) => {
 
@@ -22,14 +22,7 @@ const Slider = ({where}) => {
                 containerClass="carousel-container"
                 responsive={responsive}
             >
-                {/*{[...Array(10)].map((_, a) => (*/}
-                {/*    <div style={{height: "100px"}}>{a}*/}
-                {/*        <img src={aaa} alt="음식 사진X"/>*/}
-                {/*        <FoodCard/>*/}
-                {/*    </div>*/}
-                {/*))}*/}
-
-                {food.map((f,a) => (
+                {food?.map((f,a) => (
                         <FoodCard aa={aa} f={f} num={a}/>
                 ))}
             </Carousel>

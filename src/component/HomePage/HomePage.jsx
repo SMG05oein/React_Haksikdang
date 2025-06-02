@@ -4,7 +4,7 @@ import "./HomePage.style.css"
 import TeachingCenter1F from "../Food/TeachingCenter1f";
 import {useNavigate} from "react-router-dom";
 import Slider from "../common/Slider";
-import aa from "../../photo/dongase.png"
+import aa from "../../photo/TC1/dongase.png"
 
 const HomePage = () => {
     const navigate = useNavigate();
