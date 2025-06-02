@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 991px) {
+  /*.carousel-container {*/
+  /*  display: flex;*/
+  /*  justify-content: center;*/
+  /*  align-items: center;*/
+  /*}*/
+  .food-card {
+    text-align: center;
+    margin: auto;
+  }
+
+}
+
