@@ -1,4 +1,8 @@
 import React from 'react';
+import Carousel from "react-multi-carousel";
+import 'react-multi-carousel/lib/styles.css';
+
+import {responsive} from "../../constants/responsive";
 
 const TeachingCenter1F = () => {
     return (
@@ -10,6 +14,20 @@ const TeachingCenter1F = () => {
             그거 클릭해서 들어가면 상세 페이지(아마 가격, 이미지, 추가,<br/> 이전,
             영양소, 칼로리, 리뷰...? 등등)<br/><br/>
             파일 구조는 생각해 봐야 함
+            <Carousel
+                infinite={true}
+                centered={true}
+                showDots={true}
+                ssr={true}
+                // customTransition="all .5"
+                items={"movie-slider p1"}
+                containerClass="carousel-container"
+                responsive={responsive}
+            >
+                {[...Array(10)].map((_, a) => (
+                    <div style={{height:"100px"}} >{a}</div>
+                ))}
+            </Carousel>
         </div>
     );
 };

@@ -29,6 +29,7 @@ function App() {
             <Route path={"/"} element={<TopMenu auth={auth} setAuth={setAuth} />}>
                 <Route index element={<HomePage/>}/>
                 <Route path={"/login"} element={<Login setAuth={setAuth} />}/>
+                
             </Route>
             <Route path={"/devtest"} element={<Test hello={hello}/>}/>
             <Route path={"*"} element={<NotFound/>}/>
