@@ -25,23 +25,24 @@ const Login = () => {
             passwdRef.current.focus();
             return;
         }
-        console.log(user)
-        user?.map((u)=>{
-            console.log("dasda",u.number);
-            console.log("dasda",u.passwd);
-
-            if(u.number != studentId || u.passwd != passwd){
-                alert("학번 또는 비밀번호가 맞지 않습니다!!");
-                return;
+        // console.log(user)
+        // console.log(user.length);
+        let check = false;
+        for(let i = 0; i < user.length; i++){
+            if(user[i].number != studentId || user[i].passwd != passwd){
+                check = false;
+            }else{
+                check = true;
+                // return;
             }
-            else{
-                alert("홈으로");
-                return;
-            }
-        })
-        console.log("학번:", studentId);
-        console.log("비밀번호:", passwd);
-        // navigate("/");
+        }
+        // console.log(check);
+        if(check){
+            alert("홈으로");
+        }else{
+            alert("학번 또는 비밀번호가 맞지 않습니다!!");
+        }
+        navigate("/");
     };
 
     return (
