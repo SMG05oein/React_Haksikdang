@@ -25,3 +25,28 @@
         margin-left: unset;
     }
 }
+
+@media screen and (max-width: 435px) {
+    .TMtitle{
+        font-size: 18px;
+    }
+    .person-icon{
+        height: 30px;
+        width: auto;
+    }
+    .dropdown-person-icon{
+        margin-left: unset;
+    }
+}
+@media screen and (max-width: 400px) {
+    .TMtitle{
+        font-size: 14px;
+    }
+    .person-icon{
+        height: 30px;
+        width: auto;
+    }
+    .dropdown-person-icon{
+        margin-left: unset;
+    }
+}

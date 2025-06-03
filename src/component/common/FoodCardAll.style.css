@@ -8,3 +8,11 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     /*overflow: hidden;*/
 }
+
+.foodTitle{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}

@@ -22,7 +22,7 @@ const Slider = ({where}) => {
                 responsive={responsive}
             >
                 {food?.map((f,a) => (
-                        <FoodCard f={f} num={a}/>
+                        <FoodCard f={f} num={a} w={where}/>
                 ))}
             </Carousel>
         </div>

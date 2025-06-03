@@ -1,24 +1,23 @@
 import React, {useEffect} from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import "../FoodCommon.style.css";
+import "../../common/FoodCardAll.style.css";
 import {useNavigate} from "react-router-dom";
+import FoodCardAll from "../../common/FoodCardAll";
 
 const TeachingCenter1F = ({auth}) => {
     const navigate = useNavigate();
 
-    useEffect(() => {
-        if (auth === 0) {
-            navigate("/login");
-        }
-    }, [auth]);
+    // useEffect(() => {
+    //     if (auth === 0) {
+    //         navigate("/login");
+    //     }
+    // }, [auth]);
 
     return (
         <Container>
             <Row>
                 <Col lg={12} md={12} xs={12}>
-                    <div className="boxFood">
-                        교수회관 1층
-                    </div>
+                    <FoodCardAll title={"교수회관 1층"}/>
                 </Col>
             </Row>
         </Container>

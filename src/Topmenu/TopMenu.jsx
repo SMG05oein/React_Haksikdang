@@ -14,7 +14,9 @@ const TopMenu = ({auth, setAuth}) => {
         <div className="top-menu">
             <Navbar expand="lg" className="bg-primary bg-gradient">
                 <Container fluid>
-                    <Navbar.Brand onClick={() => {navigate("/")}} style={{cursor:'pointer'}}><img style={{width:'44px'}} src={BuLogo}/> 백석대 학식당 통합 예매 시스템</Navbar.Brand>
+                    <Navbar.Brand onClick={() => {navigate("/")}} style={{cursor:'pointer', display:"flex"}}><img style={{width:'44px'}} src={BuLogo}/>
+                        <div className={"TMtitle"}>백석대 학식당 통합 예매 시스템</div>
+                    </Navbar.Brand>
                     {/*<IoPersonCircleOutline style={{ width: "44", height: "44", marginLeft: "auto" }} />*/}
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">

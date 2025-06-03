@@ -9,56 +9,56 @@
   ],
   "teaching_center_1f": [
     {
-      "idx": 0,
+      "idx": 1,
       "foodName": "등심 돈까스",
       "price": 6000,
       "category": "돈까스",
       "img": "photo/TC1/dongase.png"
     },
     {
-      "idx": 1,
+      "idx": 2,
       "foodName": "고구마 치즈 돈까스",
       "price": 6500,
       "category": "돈까스",
       "img": "photo/TC1/gogumaDongase.png"
     },
     {
-      "idx": 2,
+      "idx": 3,
       "foodName": "치즈 돈까스",
       "price": 6500,
       "category": "돈까스",
       "img": "photo/TC1/cheeseDongase.png"
     },
     {
-      "idx": 3,
+      "idx": 4,
       "foodName": "제육 덮밥",
       "price": 5500,
       "category": "덮밥",
       "img": "photo/TC1/jBab.png"
     },
     {
-      "idx": 4,
+      "idx": 5,
       "foodName": "보쌈 정식",
       "price": 5500,
       "category": "정식",
       "img": "photo/TC1/boSam.png"
     },
     {
-      "idx": 5,
+      "idx": 6,
       "foodName": "수육 정식",
       "price": 5500,
       "category": "정식",
       "img": "photo/TC1/suyuk.png"
     },
     {
-      "idx": 6,
+      "idx": 7,
       "foodName": "알밥",
       "price": 5500,
       "category": "기타",
       "img": "photo/TC1/albab.png"
     },
     {
-      "idx": 7,
+      "idx": 8,
       "foodName": "치킨가스",
       "price": 6500,
       "category": "기타",
@@ -71,14 +71,14 @@
       "idx": 1,
       "foodName": "사골칼국수",
       "price": 4500,
-      "category": "기타",
+      "category": "칼국수",
       "img": "photo/MW/saGolKal.png"
     },
     {
       "idx": 2,
       "foodName": "칼칼칼국수",
       "price": 5500,
-      "category": "기타",
+      "category": "칼국수",
       "img": "photo/MW/kalkalkal.png"
     },
     {
@@ -99,14 +99,14 @@
       "idx": 5,
       "foodName": "육개장칼국수",
       "price": 7500,
-      "category": "기타",
+      "category": "칼국수",
       "img": "photo/MW/yukkal.png"
     },
     {
       "idx": 6,
       "foodName": "명품찐만두",
       "price": 4000,
-      "category": "기타",
+      "category": "만두",
       "img": "photo/MW/mandu.png"
     },
     {
@@ -115,12 +115,12 @@
       "price": 2500,
       "category": "기타",
       "img": "photo/MW/guong.png"
-    },
+    }
     {
       "idx": 8,
       "foodName": "일품갈비만두",
       "price": 4500,
-      "category": "기타",
+      "category": "만두",
       "img": "photo/MW/galman.png"
     },
     {
