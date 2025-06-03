@@ -24,8 +24,9 @@ const TopMenu = ({auth, setAuth}) => {
                             navbarScroll
                         >
                             <Nav.Link onClick={() => {navigate("/")}}>홈으로</Nav.Link>
-                            <Nav.Link onClick={() => {navigate("/")}}>교수회관</Nav.Link>
-                            <Nav.Link onClick={() => {navigate("/")}}>밀겨울</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("tc1")}}>교수회관 1층</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("/")}}>교수회관 2층</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("mw")}}>밀겨울</Nav.Link>
                             <Nav.Link onClick={() => {navigate("/")}}>안골</Nav.Link>
                             <Nav.Link onClick={() => {navigate("/devtest")}}>DevTest</Nav.Link>
 

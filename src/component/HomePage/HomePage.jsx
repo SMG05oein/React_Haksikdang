@@ -15,7 +15,7 @@ const HomePage = () => {
                         <Row>
                             <Col lg={12} md={12} xs={12}>
                                 <div className={"title"} onClick={() => {
-                                    navigate("/")
+                                    navigate("/tc1")
                                 }}>
                                     교수회관 1층 메뉴
                                 </div>

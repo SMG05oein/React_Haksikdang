@@ -11,6 +11,8 @@ import HomePage from "./component/HomePage/HomePage";
 import {useUser} from "./hooks/useUser";
 import {useFood} from "./hooks/useFood";
 import Login from "./component/Login/Login";
+import TeachingCenter1F from "./component/Food/TC1/TeachingCenter1f";
+import MealWinter from "./component/Food/MW/mealWinter";
 
 function App() {
 
@@ -29,6 +31,8 @@ function App() {
             <Route path={"/"} element={<TopMenu auth={auth} setAuth={setAuth} />}>
                 <Route index element={<HomePage/>}/>
                 <Route path={"/login"} element={<Login setAuth={setAuth} />}/>
+                <Route path={"/tc1"} element={<TeachingCenter1F auth={auth}/>}/>
+                <Route path={"/mw"} element={<MealWinter auth={auth}/>}/>
                 
             </Route>
             <Route path={"/devtest"} element={<Test hello={hello}/>}/>
