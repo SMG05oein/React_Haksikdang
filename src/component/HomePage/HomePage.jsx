@@ -32,7 +32,7 @@ const HomePage = () => {
                         <Row>
                             <Col>
                                 <div className={"title"} onClick={() => {
-                                    navigate("/")
+                                    navigate("/mw")
                                 }}>
                                     밀겨울 메뉴
                                 </div>

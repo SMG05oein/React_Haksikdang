@@ -17,7 +17,7 @@ const TeachingCenter1F = ({auth}) => {
             <Row>
                 <Col lg={12} md={12} xs={12}>
                     <div className="boxFood">
-                        asd
+                        교수회관 1층
                     </div>
                 </Col>
             </Row>
