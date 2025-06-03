@@ -43,8 +43,8 @@ const Login = ({setAuth}) => {
         // console.log(check);
         if(check){
             alert("로그인 성공!");
-            if(str === "student") {setAuth(1);}
-            else if(str === "admin") {setAuth(2)}
+            if(str === "student") {setAuth(1);} //학생 계정
+            else if(str === "admin") {setAuth(2)} // 식당 관리자 계정
             navigate("/");
         }else{
             alert("학번 또는 비밀번호가 맞지 않습니다!!");

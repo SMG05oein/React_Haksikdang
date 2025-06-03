@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import "./HomePage.style.css"
-import TeachingCenter1F from "../Food/TeachingCenter1f";
+import "./HomePage.style.css";
+import 'react-multi-carousel/lib/styles.css';
 import {useNavigate} from "react-router-dom";
 import Slider from "../common/Slider";
 
@@ -14,17 +14,13 @@ const HomePage = () => {
                     <div className={'box'}>
                         <Row>
                             <Col lg={12} md={12} xs={12}>
+                                <div className={"title"} onClick={() => {
+                                    navigate("/")
+                                }}>
+                                    교수회관 1층 메뉴
+                                </div>
                                 <div>
-                                    <div>
-                                        <div className={"title"} onClick={() => {
-                                            navigate("/")
-                                        }}>
-                                            교수회관 1층 메뉴
-                                        </div>
-                                        <div>
-                                            <Slider where={"teaching_center_1f"}/>
-                                        </div>
-                                    </div>
+                                    <Slider where={"teaching_center_1f"}/>
                                 </div>
                             </Col>
                         </Row>
