@@ -15,8 +15,10 @@ const FoodCardAll = ({title}) => {
     }
     const food = useFood(where);
 
-    // console.log(title);
-
+    console.log(food);
+    if(food.length === 0){
+        return <h1 className={"loading"}></h1>;
+    }
     return (
         <Container className={"boxFood"}>
             <Row>
