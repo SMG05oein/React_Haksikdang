@@ -1,11 +1,11 @@
 import React from 'react';
 import "./FoodCard.style.css";
-import aa from "../../photo/MW/nangmomil.png"
+import aa from "../../photo/MW/mandu.png"
 
 const FoodCard = ({f, a}) => {
     // console.log(f.img);
     // let url = f.img;
-    // console.log(aa);
+    console.log(aa);
     return (
         <div className="food-card">
             <div>
