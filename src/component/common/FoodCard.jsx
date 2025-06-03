@@ -1,17 +1,17 @@
 import React from 'react';
 import "./FoodCard.style.css";
-import aa from "../../photo/MW/mandu.png"
+// import aa from `${process.env.PUBLIC_URL}/photo/MW/mandu.png`
 
 const FoodCard = ({f, a}) => {
     // console.log(f.img);
     // let url = f.img;
-    console.log(aa);
+    // console.log(aa);
     return (
         <div className="food-card">
             <div>
                 {f.foodName}
             </div>
-            <img src={f?.img} alt="음식 사진X"/>
+            <img src={`${process.env.PUBLIC_URL}`+f?.img} alt="음식 사진X"/>
         </div>
     );
 };

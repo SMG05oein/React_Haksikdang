@@ -13,56 +13,56 @@
       "foodName": "등심 돈까스",
       "price": 6000,
       "category": "돈까스",
-      "img": "/static/media/dongase.e68e2658852b43c3c524.png"
+      "img": "photo/TC1/dongase.png"
     },
     {
       "idx": 1,
       "foodName": "고구마 치즈 돈까스",
       "price": 6500,
       "category": "돈까스",
-      "img": "/static/media/gogumaDongase.3cce1beaae33cdfee90c.png"
+      "img": "photo/TC1/gogumaDongase.png"
     },
     {
       "idx": 2,
       "foodName": "치즈 돈까스",
       "price": 6500,
       "category": "돈까스",
-      "img": "/static/media/cheeseDongase.d75af27583c4f09c1223.png"
+      "img": "photo/TC1/cheeseDongase.png"
     },
     {
       "idx": 3,
       "foodName": "제육 덮밥",
       "price": 5500,
       "category": "덮밥",
-      "img": "/static/media/jBab.43f74e755cffd3d56c69.png"
+      "img": "photo/TC1/jBab.png"
     },
     {
       "idx": 4,
       "foodName": "보쌈 정식",
       "price": 5500,
       "category": "정식",
-      "img": "/static/media/boSam.7e01d7ce0fc82b2dd190.png"
+      "img": "photo/TC1/boSam.png"
     },
     {
       "idx": 5,
       "foodName": "수육 정식",
       "price": 5500,
       "category": "정식",
-      "img": "/static/media/suyuk.797ce924635e3c59cc9e.png"
+      "img": "photo/TC1/suyuk.png"
     },
     {
       "idx": 6,
       "foodName": "알밥",
       "price": 5500,
       "category": "기타",
-      "img": "/static/media/albab.b92509a65ae1357ecf5a.png"
+      "img": "photo/TC1/albab.png"
     },
     {
       "idx": 7,
       "foodName": "치킨가스",
       "price": 6500,
       "category": "기타",
-      "img": "/static/media/chichengas.3a3a4932c209fcaaef81.png"
+      "img": "photo/TC1/chichengas.png"
     }
   ],
   "teaching_center_2f": [],
@@ -72,63 +72,63 @@
       "foodName": "사골칼국수",
       "price": 4500,
       "category": "기타",
-      "img": "/static/media/saGolKal.cf2797e5f9fff042e097.png"
+      "img": "photo/MW/saGolKal.png"
     },
     {
       "idx": 2,
       "foodName": "칼칼칼국수",
       "price": 5500,
       "category": "기타",
-      "img": "/static/media/kalkalkal.ae08c066e61dd7d8d815.png"
+      "img": "photo/MW/kalkalkal.png"
     },
     {
       "idx": 3,
       "foodName": "비빔밥",
       "price": 6000,
       "category": "기타",
-      "img": "/static/media/bibibab.5a8544867382b77eab92.png"
+      "img": "photo/MW/bibibab.png"
     },
     {
       "idx": 4,
       "foodName": "육개장",
       "price": 7500,
       "category": "기타",
-      "img": "/static/media/yukgeajang.3f6c938c1eef274dc7b3.png"
+      "img": "photo/MW/yukgeajang.png"
     },
     {
       "idx": 5,
       "foodName": "육개장칼국수",
       "price": 7500,
       "category": "기타",
-      "img": "/static/media/yukkal.e8b957ec9e63677d44a1.png"
+      "img": "photo/MW/yukkal.png"
     },
     {
       "idx": 6,
       "foodName": "명품찐만두",
       "price": 4000,
       "category": "기타",
-      "img": "/static/media/mandu.2debce8f5454e47c50b0.png"
+      "img": "photo/MW/mandu.png"
     },
     {
       "idx": 7,
       "foodName": "궁중떡갈비",
       "price": 2500,
       "category": "기타",
-      "img": "/static/media/guong.5b529b740e326d0519a3.png"
+      "img": "photo/MW/guong.png"
     },
     {
       "idx": 8,
       "foodName": "일품갈비만두",
       "price": 4500,
       "category": "기타",
-      "img": "/static/media/galman.f83d876850d10c5e210a.png"
+      "img": "photo/MW/galman.png"
     },
     {
       "idx": 9,
       "foodName": "시원냉모밀",
       "price": 5900,
       "category": "기타",
-      "img": "/static/media/nangmomil.47b6c88a2bb2f12732bf.png"
+      "img": "photo/MW/nangmomil.png"
     }
   ],
   "angol":[]
