@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useFood} from "../../hooks/useFood";
 import {Button, Col, Container, Row} from "react-bootstrap";
 import "./Bucket.style.css"
@@ -11,9 +11,20 @@ const Bucket = ({auth, bucket}) => {
     let food = new Array([[]]);
 
     console.log("ㅠㅠㅠㅠ",bucket);
+    let i = 0;
+    const sum = bucket?.reduce((acc, item) => {
+        if (!item || !item.price || !item.quantity) return acc;
+        return acc + item.price * item.quantity;
+    }, 0) ?? 0;
 
-    var sum = 0;
-    sum = bucket?.reduce((acc, item) => acc + parseInt(item.price*item.quantity, 10), 0) ?? 0;
+    const del=(idx)=>{
+        if(window.confirm("정말 삭제하시겠습니까?")){
+            bucket[idx] = []
+            alert("삭제되었습니다.")
+        }else{
+            alert("취소")
+        }
+    }
 
     return (
         <Container className="">
@@ -21,13 +32,20 @@ const Bucket = ({auth, bucket}) => {
                 <Col className={""}>
                     <div className="box">
                         <div className={"buTitle"}>장바구니</div>
-                        <Row>
-                            {bucket?.map((item) => (
+                        {bucket?.map((item, i=0) => (
+                            <Row>
+                            {/*{bucket?.map((item, i=0) => (*/}
                                 <Col lg={4} md={4} xs={10} sm={6}>
-                                    <FoodCard f={item} w={9999} />
+                                    {item.length === 0 ?
+                                        <div></div>
+                                        :
+                                        <FoodCard k={i} f={item} w={9999} del={del}/>
+                                    }
                                 </Col>
-                            ))}
+                            {/*))}*/}
                         </Row>
+                        ))}
+
                         <Row>
                             <div className="bucketBtn">
                                 <div>총 가격: {sum}원</div>

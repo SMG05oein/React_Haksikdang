@@ -1,15 +1,24 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./TopMenu.style.css"
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {Outlet, useNavigate} from "react-router-dom";
 import BuLogo from "../BuLogo.png"
 import { IoPersonCircleOutline } from "react-icons/io5";
 
-const TopMenu = ({auth, setAuth}) => {
+const TopMenu = ({auth, setAuth, bucket}) => {
     const [showDropdown, setShowDropdown] = useState(false);
-
+    const [ee, setEe] = useState(false);
     const navigate = useNavigate();
+    useEffect(() => {
+        if(bucket.length === 0){
+            setEe(false);
+        }else{
+            setEe(true);
+        }
+    },[bucket]);
+    // console.log("aaaa",bucket);
 
+    // console.log("aaaa",ee);
     return (
         <div className="top-menu">
             <Navbar expand="lg" className="bg-primary bg-gradient">
@@ -30,7 +39,11 @@ const TopMenu = ({auth, setAuth}) => {
                             <Nav.Link onClick={() => {navigate("/")}}>교수회관 2층</Nav.Link>
                             <Nav.Link onClick={() => {navigate("mw")}}>밀겨울</Nav.Link>
                             <Nav.Link onClick={() => {navigate("/")}}>안골</Nav.Link>
-                            <Nav.Link onClick={() => {navigate("/bucket")}} style={auth === 0 ? {display:"none"}: {display:"block"}}>장바구니</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("/bucket")}} style={auth === 0 ? {display:"none"}: {display:"block"}}>장바구니
+                                <div style={ee ? {color: "red",fontWeight: "bold",display: "inline",marginLeft: "4px"} : {display:"none"} }
+                                >*</div>
+
+                            </Nav.Link>
                             {/*<Nav.Link onClick={() => {navigate("/devtest")}}>DevTest</Nav.Link>*/}
 
                             <NavDropdown

@@ -31,7 +31,7 @@ function App() {
 
     return (
         <Routes>
-            <Route path={"/"} element={<TopMenu auth={auth} setAuth={setAuth} />}>
+            <Route path={"/"} element={<TopMenu auth={auth} setAuth={setAuth} bucket={bucket} />}>
                 <Route index element={<HomePage/>}/>
                 <Route path={"/login"} element={<Login setAuth={setAuth} />}/>
                 <Route path={"/tc1"} element={<TeachingCenter1F auth={auth}/>}/>
