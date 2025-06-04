@@ -1,39 +1,54 @@
-.food-card {
-    width: 98%;
-    height: 220px;
-    background-position:center;
-    background-size: cover;
-    cursor: pointer;
-    transition: 0.5s;
+.food-card{
+  position:relative;
+  width:100%;
+  max-width:300px;
+  aspect-ratio:4/3;
+  border-radius:12px;
+  overflow:hidden;
+  cursor:pointer;
+  background:var(--bg) center/cover no-repeat;
+  background-image:var(--bg);
+  box-shadow:var(--card-shadow);
+  transition:transform .25s,box-shadow .25s;
+}
+.food-card:hover{
+  transform:translateY(-6px) scale(1.02);
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
 }
 
-.food-card:hover {
-    transform: scale(1.05);
+.food-card::before{
+  content:"";
+  position:absolute;inset:0;
+  background:rgba(0,0,0,.35);
+  opacity:0;
+  transition:opacity .25s;
+}
+.food-card:hover::before{opacity:1;}
+
+.food-card .info{
+  position:absolute;inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:14px;
+  opacity:0;
+  transition:opacity .25s;
+  color:#fff;
+  text-shadow:0 1px 3px rgba(0,0,0,.8);
+}
+.food-card:hover .info{opacity:1;}
+
+.food-card .info h3{
+  margin:0 0 4px;
+  font-size:1.1rem;
+  font-weight:600;
+}
+.food-card .info p{
+  margin:0;
+  font-size:.85rem;
+  line-height:1.3;
 }
 
-.food-card img {
-    max-width: 100%;
-}
-
-.food-card-content{
-    width: 100%;
-    height: 100%;
-    background: rgba(43, 41, 41, 0.7);
-    opacity: 0;
-    /*이거 좀 이상함 안 됌*/
-    transition: all 1s;
-    color: white;
-    font-weight: bold;
-    overflow-wrap: break-word;
-    padding: 16px;
-}
-.food-card-content:hover{
-    opacity: 1;
-}
-
-@media (max-width: 1024px) {
-    .food-card {
-        text-align: center;
-        margin: auto;
-    }
+@media(max-width:576px){
+  .food-card{max-width:100%;}
 }

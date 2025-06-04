@@ -1,29 +1,32 @@
-.boxFood {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 2px solid #333;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    /*overflow: hidden;*/
-}
-
-.loading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loading::after {
-    content: "Loading...";
-    animation: blink 1s infinite;
+.boxFood{
+  width:100%;
+  margin-top:16px;
+  background:transparent;
+  border:none;
+  padding:0;
 }
 
 .foodTitle{
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 10px 0;
+  font-size:1.25rem;
+  font-weight:700;
+  color:var(--primary);
+  margin:0 0 .5rem;
+  text-align:center;
+}
+
+.loading{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.loading::after{
+  content:"Loading...";
+  animation:blink 1s infinite;
+}
+
+.justify-content-center>.col{
+  margin-bottom:20px;
+}
+@keyframes blink{
+  0%,100%{opacity:1;}50%{opacity:.3;}
 }

@@ -1,0 +1,22 @@
+:root{
+  --primary:#0055A4;     
+  --primary-dark:#003C78;
+  --secondary:#FFFFFF;
+  --bg:#F6F9FC;
+  --text:#333333;
+  --card-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  font-family:'Noto Sans KR','Pretendard',sans-serif;
+  color:var(--text);
+}
+
+a{
+  color:var(--primary);
+  text-decoration:none;
+  transition:color .2s;
+}
+a:hover{color:var(--primary-dark);}

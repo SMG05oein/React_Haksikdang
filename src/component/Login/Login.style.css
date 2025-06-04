@@ -1,26 +1,22 @@
-.Login {
-    max-width: 350px;
-    margin: 50px auto; /* 폼을 중앙에 배치 */
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.Login{
+  max-width:350px;
+  margin:50px auto;
+  padding:24px;
+  background:#fff;
+  border:none;
+  border-radius:12px;
+  box-shadow:var(--card-shadow);
 }
-
-.Login .form-control {
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 16px;
+.Login .form-control{
+  margin-bottom:15px;
+  padding:10px;
+  font-size:16px;
 }
-
-.Login .btn {
-    width: 100%;
-    font-size: 18px;
-    background-color: #007bff;
-    border: none;
+.Login .btn{
+  width:100%;
+  font-size:18px;
+  font-weight:600;
+  background:var(--primary);
+  border:none;
 }
-
-.Login .btn:hover {
-    background-color: #0056b3;
-}
+.Login .btn:hover{background:var(--primary-dark);}

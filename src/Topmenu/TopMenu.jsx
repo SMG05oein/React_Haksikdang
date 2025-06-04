@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./TopMenu.style.css"
-import {Button, Container, Form, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {Outlet, useNavigate} from "react-router-dom";
 import BuLogo from "../BuLogo.png"
 import { IoPersonCircleOutline } from "react-icons/io5";
@@ -14,7 +14,7 @@ const TopMenu = ({auth, setAuth}) => {
         <div className="top-menu">
             <Navbar expand="lg" className="bg-primary bg-gradient">
                 <Container fluid>
-                    <Navbar.Brand onClick={() => {navigate("/")}} style={{cursor:'pointer', display:"flex"}}><img style={{width:'44px'}} src={BuLogo}/>
+                    <Navbar.Brand onClick={() => {navigate("/")}} style={{cursor:'pointer', display:"flex", alignItems:"center"}}><img style={{width:'44px'}} src={BuLogo} alt="백석대학교 로고"/>
                         <div className={"TMtitle"}>백석대 학식당 통합 예매 시스템</div>
                     </Navbar.Brand>
                     {/*<IoPersonCircleOutline style={{ width: "44", height: "44", marginLeft: "auto" }} />*/}
@@ -22,7 +22,7 @@ const TopMenu = ({auth, setAuth}) => {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="me-auto my-2 my-lg-0"
-                            style={{ maxHeight: '1100px', width: '100%' }}
+                            style={{ maxHeight:'1100px', width:'100%', alignItems:'center' }}
                             navbarScroll
                         >
                             <Nav.Link onClick={() => {navigate("/")}}>홈으로</Nav.Link>
