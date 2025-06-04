@@ -9,13 +9,21 @@ const TopMenu = ({auth, setAuth, bucket}) => {
     const [showDropdown, setShowDropdown] = useState(false);
     const [ee, setEe] = useState(false);
     const navigate = useNavigate();
+    let check=0;
+    bucket?.map((item) => (
+        item.length === 0 ? check+=1 : check+=0
+    ))
+    let cntBucket = bucket?.length;
+
+    console.log("cntBu",cntBucket);
+    console.log('cnt',check);
     useEffect(() => {
-        if(bucket.length === 0){
+        if(bucket.length === 0 || cntBucket == check) {
             setEe(false);
         }else{
             setEe(true);
         }
-    },[bucket]);
+    },[bucket, check, cntBucket]);
     // console.log("aaaa",bucket);
 
     // console.log("aaaa",ee);

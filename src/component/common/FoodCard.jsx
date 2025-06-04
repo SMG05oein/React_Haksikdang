@@ -6,7 +6,7 @@ import {Button} from "react-bootstrap";
 const FoodCard = ({k ,f, w, del}) => {
   const navigate = useNavigate();
 
-  console.log("das",f);
+  // console.log("das",f);
     return w !== 9999 ? (
             <div
                 className="food-card"

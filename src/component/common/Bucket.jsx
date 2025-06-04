@@ -10,7 +10,7 @@ const Bucket = ({auth, bucket}) => {
     const navigate = useNavigate();
     let food = new Array([[]]);
 
-    console.log("ㅠㅠㅠㅠ",bucket);
+    // console.log("ㅠㅠㅠㅠ",bucket);
     let i = 0;
     const sum = bucket?.reduce((acc, item) => {
         if (!item || !item.price || !item.quantity) return acc;
@@ -33,15 +33,14 @@ const Bucket = ({auth, bucket}) => {
                     <div className="box">
                         <div className={"buTitle"}>장바구니</div>
                             <Row>
-                            {bucket?.map((item, i=0) => (
-                                <Col lg={4} md={4} xs={10} sm={6}>
-                                    {item.length === 0 ?
-                                        <div></div>
-                                        :
-                                        <FoodCard k={i} f={item} w={9999} del={del}/>
-                                    }
-                                </Col>
-                            ))}
+                                {bucket.map((item, i) => {
+                                    if (!item || Object.keys(item).length === 0) return null;
+                                    return (
+                                        <Col key={i} lg={4} md={4} xs={10} sm={6}>
+                                            <FoodCard k={i} f={item} w={9999} del={del} />
+                                        </Col>
+                                    );
+                                })}
                         </Row>
 
                         <Row>
