@@ -1,0 +1,34 @@
+.boxBu {
+    width: 60%;
+    height: auto;
+    /*margin-top: 10px;*/
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    /*overflow: hidden;*/
+}
+
+.buTitle{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.bucketBtn {
+    display: flex;
+    flex-direction: column; /* 위아래 정렬 */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 10px; /* 버튼 사이 간격 */
+    margin-top: 10px;
+}

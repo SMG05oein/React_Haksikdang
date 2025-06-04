@@ -30,7 +30,8 @@ const TopMenu = ({auth, setAuth}) => {
                             <Nav.Link onClick={() => {navigate("/")}}>교수회관 2층</Nav.Link>
                             <Nav.Link onClick={() => {navigate("mw")}}>밀겨울</Nav.Link>
                             <Nav.Link onClick={() => {navigate("/")}}>안골</Nav.Link>
-                            <Nav.Link onClick={() => {navigate("/devtest")}}>DevTest</Nav.Link>
+                            <Nav.Link onClick={() => {navigate("/bucket")}} style={auth === 0 ? {display:"none"}: {display:"block"}}>장바구니</Nav.Link>
+                            {/*<Nav.Link onClick={() => {navigate("/devtest")}}>DevTest</Nav.Link>*/}
 
                             <NavDropdown
                                 title={<IoPersonCircleOutline className="person-icon"/>}
