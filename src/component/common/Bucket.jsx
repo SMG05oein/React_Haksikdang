@@ -32,9 +32,8 @@ const Bucket = ({auth, bucket}) => {
                 <Col className={""}>
                     <div className="box">
                         <div className={"buTitle"}>장바구니</div>
-                        {bucket?.map((item, i=0) => (
                             <Row>
-                            {/*{bucket?.map((item, i=0) => (*/}
+                            {bucket?.map((item, i=0) => (
                                 <Col lg={4} md={4} xs={10} sm={6}>
                                     {item.length === 0 ?
                                         <div></div>
@@ -42,9 +41,8 @@ const Bucket = ({auth, bucket}) => {
                                         <FoodCard k={i} f={item} w={9999} del={del}/>
                                     }
                                 </Col>
-                            {/*))}*/}
+                            ))}
                         </Row>
-                        ))}
 
                         <Row>
                             <div className="bucketBtn">
